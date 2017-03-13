@@ -11,4 +11,21 @@ describe('curryfyAll', function () {
 
     assert.isFunction(chicken.tastelessWingCurry);
   });
+
+  it('curries new methods on object', function () {
+    var chicken = {
+      tastelessWing: function (skin, bone) {
+        return skin + bone;
+      }
+    };
+    curryfyAll(chicken);
+
+    var chickenSkin = chicken.tastelessWingCurry('skin');
+    assert.isFunction(chickenSkin);
+    assert.equal(chickenSkin('bone'), 'skinbone');
+  });
+
+  it('allows to use custom method to do the currying');
+
+  it('gives possibility to hard bind the object');
 });
