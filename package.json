@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Package to help you curry all methods within an object, inspired by bluebird's promisifyAll method",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szabolcs-szilagyi/curryfy-all"
+  },
   "scripts": {
     "test": "grunt test"
   },
