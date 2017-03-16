@@ -31,18 +31,18 @@ const myTastelessObject = {
   soupe (water, vegetables) {
     return [water].concat(vegetables).join(' ~ ');
   },
-  
+
   cook (stow, baseSoupe) {
     return `${stow} heating up ${baseSoupe}`;
   }
 }
 
-curryfyAll(myTastelessObject)
+curryfyAll(myTastelessObject);
 
 // start cooking with curry (I know, it is an old joke, but still.. :laughing:)
 const preparedWater = myTastelessObject.soupeCurry('clean water');
-const heatedStow = myTastelessObject.cookCurry('fiery furnace')
-const cookVegetables = _.flow([preparedWater, heatedStow])
+const heatedStow = myTastelessObject.cookCurry('fiery furnace');
+const cookVegetables = _.flow([preparedWater, heatedStow]);
 
 console.log(cookVegetables(['carrots', 'potato']));
 // in console: "fiery furnace heating up clean water ~ carrots ~ potato"
@@ -51,10 +51,9 @@ console.log(cookVegetables(['carrots', 'potato']));
 
 # API
 
-- [`curry`](#curry)
-  Can provide custom curry method via this property
-- [`context`](#context)
-  The object provided here will be hard binded as `this` context
+- [`curry`](#curry) - Can provide custom curry method via this property
+- [`context`](#context) - The object provided here will be hard binded as the
+  context of `this`
 
 
 ## Examples for customization
