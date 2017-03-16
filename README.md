@@ -61,7 +61,7 @@ console.log(cookVegetables(['carrots', 'potato']));
 
 ### curry
 
-```
+```javascript
 const curry = require('curry') // some other curry method
 
 const someObj = {
@@ -76,7 +76,7 @@ curryfyAll(someObj, { curry })
 
 ### context
 
-```
+```javascript
 const someObj = {
   doNastyThingOnThis (a, b) {
     this.sum = a + b;
