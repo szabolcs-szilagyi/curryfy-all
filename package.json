@@ -1,6 +1,6 @@
 {
   "name": "curryfy-all",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Package to help you curry all methods within an object, inspired by bluebird's promisifyAll method",
   "main": "index.js",
   "repository": {
