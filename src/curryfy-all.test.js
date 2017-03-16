@@ -13,7 +13,7 @@ describe('curryfyAll', function () {
     assert.isFunction(chicken.tastelessWingCurry);
   });
 
-  it('curries new methods on object', function () {
+  it('curries the new methods on object', function () {
     var chicken = {
       tastelessWing: function (skin, bone) {
         return skin + bone;
