@@ -4,12 +4,12 @@
 
 # Introduction
 
-This module has been inspired by the `promisifyAll` method from bluebird promise
-library, to give an easy way to curry all the methods on an object. The current
-implementation is a working but naive one. If you feel that it misses the spot
-for you, don't be shy to open a ticket about it.
+This module has been inspired by the `promisifyAll` method from the bluebird
+promise library, to give an easy way to curry all the methods on an object. The
+current implementation is a working but naive one. If you feel that it misses
+the spot for you, don't be shy to open a ticket about it.
 
-Similary to the `promisifyAll` method, this package will add new methods on the
+Similarly to the `promisifyAll` method, this package will add new methods on the
 provided object. The new methods will get a `Curry` suffix, e.g.: if there is a
 `makeSoupe` method on an object, then it will create a `makeSoupeCurry` method
 on the same object.
@@ -18,8 +18,8 @@ on the same object.
 # Installation
 
 The usual `npm` command:
-```
-npm install --save-exact
+```bash
+npm install --save-exact currfy-all
 ```
 
 
