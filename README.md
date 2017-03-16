@@ -61,15 +61,15 @@ console.log(cookVegetables(['carrots', 'potato']));
 ### curry
 
 ```javascript
-const curry = require('curry') // some other curry method
+const curry = require('curry'); // some other curry method
 
 const someObj = {
   add (a, b) {
     return a + b;
   }
-}
+};
 
-curryfyAll(someObj, { curry })
+curryfyAll(someObj, { curry });
 ```
 
 
@@ -80,11 +80,11 @@ const someObj = {
   doNastyThingOnThis (a, b) {
     this.sum = a + b;
   }
-}
+};
 
 const fakeContext = {};
 
-curryfyAll(someObj, { context: fakeContext })
+curryfyAll(someObj, { context: fakeContext });
 // `doNastyThingOnThisCurry` will have the `fakeContext` bind to `this`
 // `doNastyThingOnThis` is untouched, so will have `someObj` for this context
 ```
