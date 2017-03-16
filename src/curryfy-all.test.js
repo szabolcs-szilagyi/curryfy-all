@@ -26,6 +26,16 @@ describe('curryfyAll', function () {
     assert.equal(chickenSkin('bone'), 'skinbone');
   });
 
+  it('will not try to change properties on an object', function () {
+    var superChicken = {
+      superPower: 'constant flying'
+    };
+    curryfyAll(superChicken);
+
+    assert.isUndefined(superChicken.superPowerCurry);
+    assert.equal(superChicken.superPower, 'constant flying');
+  });
+
   it('allows to use custom method to do the currying', function () {
     var curryFn = sinon.spy();
     var turkey = {

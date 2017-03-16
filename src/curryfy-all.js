@@ -13,6 +13,7 @@ function curryfyAll (object, options) {
 
   var keys = Object.keys(object);
   keys.forEach(function (key) {
+    if (!_.isFunction(object[key])) return;
     object[key + suffix] = contexter(curry(object[key]));
   });
   return object;
