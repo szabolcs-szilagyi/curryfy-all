@@ -4,6 +4,9 @@
 
 # Introduction
 
+Sum it up in an image:
+![curry all the things](https://cloud.githubusercontent.com/assets/2981123/24675242/b5cd43d6-197e-11e7-8a06-eb8cb18ee560.jpg)
+
 This module has been inspired by the `promisifyAll` method from the bluebird
 promise library, to give an easy way to curry all the methods on an object. The
 current implementation is a working but naive one. If you feel that it misses
